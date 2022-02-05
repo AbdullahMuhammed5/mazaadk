@@ -1,0 +1,4 @@
+mutation deleteProductImage($id:ID!,$image:String!)
+{
+  deleteProductImage(id:$id,image:$image)
+}

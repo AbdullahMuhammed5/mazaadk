@@ -1,0 +1,25 @@
+mutation newTicket(
+  $ticket_id: Int!
+  $comment: String!
+  $attachments: [Upload]
+
+)
+{
+  newComment(
+    ticket_id: $ticket_id
+    comment: $comment
+    attachments: $attachments
+  )
+  {
+    id
+    content
+    user {
+      id
+      name
+      avatar
+    }
+    content
+    attachments
+    created_at
+  }
+}

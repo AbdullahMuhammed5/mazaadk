@@ -1,0 +1,10 @@
+mutation updateAvatar($avatar: Upload!)
+{
+  avatar(avatar: $avatar)
+  {
+    id
+    name
+    email
+    avatar
+  }
+}

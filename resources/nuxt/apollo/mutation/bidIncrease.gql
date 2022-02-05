@@ -1,0 +1,7 @@
+mutation BidIncrease($product_id: Int!, $increase: Float!)
+{
+  BidIncrease(
+    product_id: $product_id,
+    increase: $increase
+  )
+}

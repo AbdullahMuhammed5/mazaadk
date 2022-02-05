@@ -1,0 +1,29 @@
+mutation updateUser(
+  $id: ID!
+  $email: String!,
+  $name: String!,
+  $phone: String!,
+  $username: String!
+  $country_code: String!
+)
+{
+  account(
+    id: $id,
+    email: $email,
+    name:$name,
+    phone: $phone
+    username: $username,
+    country_code: $country_code
+  )
+  {
+    id
+    name
+    email
+    avatar
+    email_verified_at
+    phone_verified_at
+    verified
+    phone
+    country_code
+  }
+}

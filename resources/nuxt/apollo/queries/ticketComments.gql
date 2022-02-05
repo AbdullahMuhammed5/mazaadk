@@ -1,0 +1,22 @@
+query ticketComments($ticket_id: Int!)
+{
+  ticketComments(id: $ticket_id)
+  {
+    id
+    subject
+    message
+    status
+    priority
+    comments {
+      user {
+        id
+        name
+        avatar
+      }
+      user_id
+      content
+      attachments
+    }
+    created_at
+  }
+}

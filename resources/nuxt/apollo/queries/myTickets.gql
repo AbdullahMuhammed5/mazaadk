@@ -1,0 +1,12 @@
+{
+  me
+  {
+    tickets {
+      id
+      subject
+      priority
+      status
+      created_at
+    }
+  }
+}

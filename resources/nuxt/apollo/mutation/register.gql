@@ -1,0 +1,32 @@
+mutation Register(
+  $name: String!
+  $email: String!
+  $phone: String!
+  $country_code: String!
+  $password: String!
+  $password_confirmation: String!
+){
+  register(
+    name: $name,
+    email: $email,
+    phone: $phone,
+    country_code: $country_code,
+    password: $password,
+    password_confirmation: $password_confirmation
+  )
+  {
+    access_token
+    refresh_token
+    user {
+      id
+      name
+      email
+      avatar
+      email_verified_at
+      phone_verified_at
+      verified
+      phone
+      country_code
+    }
+  }
+}

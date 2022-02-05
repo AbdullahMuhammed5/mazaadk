@@ -1,0 +1,28 @@
+query product($id: ID!){
+  product(id:$id)
+  {
+    id
+    user
+    {
+      id
+      name
+      avatar
+    }
+    category
+    {
+      id
+      name
+      slug
+    }
+    name
+    description
+    images
+    price
+    min_increment
+    status
+    bids
+    features
+    close_time
+    created_at
+  }
+}

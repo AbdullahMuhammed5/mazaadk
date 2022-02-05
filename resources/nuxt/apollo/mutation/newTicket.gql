@@ -1,0 +1,21 @@
+mutation newTicket(
+  $subject: String!
+  $priority: String!
+  $message: String!
+  $attachments: [Upload]
+
+)
+{
+  newTicket(
+    subject: $subject
+    priority: $priority
+    message: $message
+    attachments: $attachments
+  )
+  {
+    id
+    subject
+    priority
+    status
+  }
+}

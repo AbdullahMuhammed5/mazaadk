@@ -1,0 +1,9 @@
+{
+  sliders {
+    id
+    image
+    title
+    description
+    link
+  }
+}

@@ -1,0 +1,7 @@
+{
+  countries{
+    nicename
+    iso
+    phonecode
+  }
+}

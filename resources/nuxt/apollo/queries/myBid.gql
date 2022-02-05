@@ -1,0 +1,9 @@
+query myBid($id: Int!)
+{
+  myBid(product_id: $id)
+  {
+    id
+    price
+    increase
+  }
+}

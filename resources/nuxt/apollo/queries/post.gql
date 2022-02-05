@@ -1,0 +1,16 @@
+query post($id: ID!) {
+  post(id: $id) {
+    id
+    title
+    body
+    meta_description
+    meta_keywords
+    image
+    slug
+    author {
+      name
+      avatar
+    }
+    created_at
+  }
+}

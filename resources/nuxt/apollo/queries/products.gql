@@ -1,0 +1,33 @@
+query products($page:Int,$category:Int){
+  products(first:10,page:$page,category_id:$category)
+  {
+    paginatorInfo {
+      total
+      hasMorePages
+      currentPage
+      lastPage
+    }
+    data{
+      id
+      user
+      {
+        id
+      }
+      category
+      {
+        name
+        slug
+      }
+      name
+      description
+      images
+      price
+      min_increment
+      status
+      features
+      bids
+      close_time
+      created_at
+    }
+  }
+}

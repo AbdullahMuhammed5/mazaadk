@@ -1,0 +1,35 @@
+{
+  me
+  {
+    id
+    name
+    email
+    avatar
+    username
+    phone
+    country_code
+    verified
+    phone_verified_at
+    email_verified_at
+    products {
+      id
+      name
+      images
+      bids
+      price
+    }
+    bids {
+      id
+      product
+      {
+        id
+        name
+        images
+        price
+        bids
+      }
+      price
+      increase
+    }
+  }
+}

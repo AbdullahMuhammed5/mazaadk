@@ -1,0 +1,27 @@
+{
+  ad {
+    id
+    product{
+      id
+      user
+      {
+        id
+      }
+      category
+      {
+        name
+        slug
+      }
+      name
+      description
+      images
+      price
+      min_increment
+      status
+      features
+      bids
+      close_time
+      created_at
+    }
+  }
+}

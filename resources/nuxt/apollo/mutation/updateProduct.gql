@@ -1,0 +1,24 @@
+mutation updateProduct(
+  $id: ID!
+  $name: String!
+  $description: String!
+  $price: Float!
+  $min_increment: Float!
+  $images: [Upload!]
+  $status: String!
+  $features: String!
+  $close_time: Date!
+)
+{
+  updateProduct(
+    id:$id
+    name: $name
+    description: $description
+    images: $images
+    price: $price
+    min_increment: $min_increment
+    status: $status
+    features: $features
+    close_time: $close_time
+  )
+}

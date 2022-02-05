@@ -1,0 +1,21 @@
+mutation LoginM($username: String!, $password: String!)
+{
+  login(input: {username: $username, password: $password})
+  {
+    access_token
+    token_type
+    refresh_token
+    user {
+      id
+      name
+      email
+      phone
+      country_code
+      username
+      avatar
+      verified
+      phone_verified_at
+      email_verified_at
+    }
+  }
+}

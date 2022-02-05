@@ -1,0 +1,15 @@
+mutation verifyEmail($code: String!)
+{
+  EmailVerification(code: $code)
+  {
+    id
+    name
+    email
+    avatar
+    email_verified_at
+    phone_verified_at
+    verified
+    phone
+    country_code
+  }
+}

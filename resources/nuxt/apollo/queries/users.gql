@@ -1,0 +1,21 @@
+query users($job: String!,$page: Int!){
+  users(job:$job,first:12,page:$page) {
+    paginatorInfo {
+      total
+      hasMorePages
+      currentPage
+      lastPage
+    }
+    data {
+      id
+      name
+      email
+      avatar
+      email_verified_at
+      phone_verified_at
+      verified
+      phone
+      country_code
+    }
+  }
+}

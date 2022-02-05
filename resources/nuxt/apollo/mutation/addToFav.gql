@@ -1,0 +1,6 @@
+mutation addFavorit($product_id: Int!)
+{
+  addFavorit(
+    product_id: $product_id
+  )
+}

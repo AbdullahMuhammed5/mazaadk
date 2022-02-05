@@ -1,0 +1,22 @@
+query Posts($page: Int!){
+  posts(first: 12, page: $page) {
+    paginatorInfo {
+      total
+      hasMorePages
+      currentPage
+      lastPage
+    }
+    data {
+      id
+      title
+      excerpt
+      image
+      slug
+      author {
+        id
+        name
+        avatar
+      }
+    }
+  }
+}

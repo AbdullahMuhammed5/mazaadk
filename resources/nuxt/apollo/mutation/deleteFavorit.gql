@@ -1,0 +1,6 @@
+mutation deleteFavorit($product_id: Int!)
+{
+  deleteFavorit(
+    product_id: $product_id
+  )
+}

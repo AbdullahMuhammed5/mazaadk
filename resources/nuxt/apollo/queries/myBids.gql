@@ -1,0 +1,14 @@
+{
+  myBids{
+    id
+    product{
+      id
+      name
+      images
+      price
+      bids
+    }
+    price
+    increase
+  }
+}
